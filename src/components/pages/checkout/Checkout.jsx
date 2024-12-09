@@ -64,7 +64,6 @@ const Checkout = () => {
                     order_id: orderId,
                 })
                 .then(() => {
-                    alert("Payment successful!");
                     navigate('/payment-success', { state: { orderId } });
                 })
                 .catch((err) => {
