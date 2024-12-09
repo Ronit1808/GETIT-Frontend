@@ -52,8 +52,8 @@ const NavBar = () => {
                 </span>
               )}
             </Link>
-
-            {/* Profile or Login */}
+            
+            
             {isLoggedIn ? (
               <div className="relative">
                 <button
@@ -62,6 +62,7 @@ const NavBar = () => {
                 >
                   <FaUserCircle className="text-3xl" />
                 </button>
+               
                 {isProfileOpen && (
                   <div className="absolute right-0 mt-2 w-48 bg-white shadow-lg rounded-md">
                     <Link

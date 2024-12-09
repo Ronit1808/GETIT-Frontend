@@ -136,27 +136,7 @@ const Checkout = () => {
             
             {/* Flex container to align order summary and shipping info equally */}
             <div className="flex flex-col lg:flex-row justify-between gap-6">
-                {/* Order Summary and Payment Method Section */}
-                <div className="cart-summary-payment bg-white p-6 rounded-lg shadow-lg w-full lg:w-[48%]">
-                    <h3 className="text-xl font-semibold mb-4">Order Summary</h3>
-                    <div className="flex mb-4 justify-between">
-                        <span className="text-lg font-semibold">Total Items:</span>
-                        <span className="text-lg">{cart.summary.numOfItems}</span>
-                    </div>
-                    <div className="flex mb-4 justify-between">
-                        <span className="text-lg font-semibold">Total Price:</span>
-                        <span className="text-lg">₹{cart.summary.totalPrice}</span>
-                    </div>
-                    <h3 className="text-xl font-semibold mb-4">Payment Method</h3>
-                    <div className="flex gap-4">
-                        <button
-                            onClick={handleProceedToPayment}
-                            className={`w-full py-3 bg-blue-500 text-white hover:bg-blue-400 rounded-md ${paymentMethod === 'razorpay' ? 'bg-blue-800' : ''}`}
-                        >
-                            Complete Order
-                        </button>
-                    </div>
-                </div>
+
 
                 {/* Shipping Details Section */}
                 <div className="shipping-details bg-white p-6 rounded-lg shadow-lg w-full lg:w-[48%]">
@@ -198,6 +178,26 @@ const Checkout = () => {
                             />
                         </div>
                     </form>
+                </div>
+                <div className="cart-summary-payment bg-white p-6 rounded-lg shadow-lg w-full lg:w-[48%]">
+                    <h3 className="text-xl font-semibold mb-4">Order Summary</h3>
+                    <div className="flex mb-4 justify-between">
+                        <span className="text-lg font-semibold">Total Items:</span>
+                        <span className="text-lg">{cart.summary.numOfItems}</span>
+                    </div>
+                    <div className="flex mb-4 justify-between">
+                        <span className="text-lg font-semibold">Total Price:</span>
+                        <span className="text-lg">₹{cart.summary.totalPrice}</span>
+                    </div>
+                    <h3 className="text-xl font-semibold mb-4">Payment Method</h3>
+                    <div className="flex gap-4">
+                        <button
+                            onClick={handleProceedToPayment}
+                            className={`w-full py-3 bg-blue-500 text-white hover:bg-blue-400 rounded-md ${paymentMethod === 'razorpay' ? 'bg-blue-800' : ''}`}
+                        >
+                            Complete Order
+                        </button>
+                    </div>
                 </div>
             </div>
 

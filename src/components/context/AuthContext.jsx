@@ -2,6 +2,7 @@ import React, { createContext, useState, useEffect } from "react";
 import api from "../../api";
 import {jwtDecode} from "jwt-decode";
 import Loading from "../Loading";
+import { useNavigate } from "react-router";
 
 export const AuthContext = createContext();
 
@@ -9,13 +10,18 @@ export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [cart, setCart] = useState({ items: [], summary: {} });
   const [loading, setLoading] = useState(true);
+  const navigate = useNavigate();
 
   const login = async (access, refresh) => {
     localStorage.setItem("access", access);
     localStorage.setItem("refresh", refresh);
+    const redirectPath = sessionStorage.getItem("redirectPath") || "/";
+      sessionStorage.removeItem("redirectPath");
+     
     try {
       await fetchUserInfo(access);
       await fetchUserCart();
+      navigate(redirectPath); 
     } catch (error) {
       console.error("Login failed:", error);
       logout();
@@ -24,6 +30,8 @@ export const AuthProvider = ({ children }) => {
 
   const logout = () => {
     setUser(null);
+    sessionStorage.removeItem("redirectPath");
+    navigate("/"); 
     setCart({ items: [], summary: {} });
     localStorage.removeItem("access");
     localStorage.removeItem("refresh");
