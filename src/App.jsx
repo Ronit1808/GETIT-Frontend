@@ -9,7 +9,7 @@ import Checkout from "./components/pages/checkout/Checkout";
 import Login from "./components/pages/user/Login";
 import ProtectedRoute from "./components/ProtectedRoute";
 import { AuthProvider } from "./components/context/AuthContext";
-import Signup from "./components/pages/user/SignUp";
+import Signup from "./components/pages/user/Signup";
 import UserProfile from "./components/userProfile/UserProfile";
 import PaymentSuccess from "./components/pages/checkout/PaymentSuccess";
 function App() {
