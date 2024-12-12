@@ -123,25 +123,25 @@ To test the payment gateway integration:
 ## Screenshots
 
 ### Home Page
-![Home Page](assets/images/home.png)
+![Home Page](src/assets/images/home.png)
 
 ### Products 
-![Products](assets/images/products.png)
+![Products](src/assets/images/products.png)
 
 ### Single Product Page
-![Single Product Page](assets/images/singleproduct.png)
+![Single Product Page](src/assets/images/singleproduct.png)
 
 ### Cart Page
-![Cart Page](assets/images/cart.png)
+![Cart Page](src/assets/images/cart.png)
 
 ### Checkout Page
-![Checkout Page](assets/images/checkout.png)
+![Checkout Page](src/assets/images/checkout.png)
 
 ### Profile Page
-![Profile Page](assets/images/profile.png)
+![Profile Page](src/assets/images/profile.png)
 
 ### Payment Success Page
-![Payment Success Page](assets/images/payment.png)
+![Payment Success Page](src/assets/images/payment.png)
 
 
 
