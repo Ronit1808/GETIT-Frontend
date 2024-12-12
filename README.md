@@ -62,13 +62,13 @@ This project is a full-stack e-commerce website where users can buy gaming acces
 
 1. Frontend:
 
-  Framework: React
+   Framework: React
 
-  Styling: Tailwind CSS
+   Styling: Tailwind CSS
 
-  Notifications: React Toastify
+   Notifications: React Toastify
 
-  Deployment: Netlify
+   Deployment: Netlify
 
 2. Backend:
 
