@@ -108,6 +108,7 @@ REACT_APP_API_URL=http://localhost:8000
 This project implements a secure user authentication system using JWT (JSON Web Token) powered by Simple JWT from Django Rest Framework (DRF). Users can sign up and log in to the platform, and their session tokens are stored securely. These tokens are used to verify and authorize requests, ensuring only authenticated users can access certain features like adding items to the cart, checking out, and viewing or updating their profile.
 
 The authentication flow ensures a seamless and secure experience, integrating with React Context for state management to maintain the user's login state across the application. Notifications during login, logout, or authentication errors are managed using React Toastify for instant feedback.
+
 ## Payment Testing
 
 To test the payment gateway integration:
