@@ -62,13 +62,13 @@ This project is a full-stack e-commerce website where users can buy gaming acces
 
 1. Frontend:
 
-  Framework: React
+   Framework: React
 
-  Styling: Tailwind CSS
+   Styling: Tailwind CSS
 
-  Notifications: React Toastify
+   Notifications: React Toastify
 
-  Deployment: Netlify
+   Deployment: Netlify
 
 2. Backend:
 
@@ -85,25 +85,21 @@ This project is a full-stack e-commerce website where users can buy gaming acces
 
 Navigate to Frontend:
 ```bash
-Copy code
 cd frontend
 ```
 
 Install Dependencies:
 ```bash
-Copy code
 npm install
 ```
 
 Start the Development Server:
 ```bash
-Copy code
 npm start
 ```
 
 Environment Variables: Add the backend API URL in an .env file:
 ```arduino
-Copy code
 REACT_APP_API_URL=http://localhost:8000
 ```
 
@@ -152,7 +148,7 @@ To test the payment gateway integration:
 
 ## Demo
 
-Frontend : https://getit1.netlify.app
+Live : https://getit1.netlify.app
 
 
 ## Backend
