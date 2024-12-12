@@ -146,7 +146,6 @@ To test the payment gateway integration:
 
 
 
-
 ## Demo
 
 Live : https://getit1.netlify.app
