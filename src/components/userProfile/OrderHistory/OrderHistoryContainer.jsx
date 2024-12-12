@@ -7,7 +7,7 @@ import Loading from "../../Loading";
 
 
 const OrderHistoryContainer = () => {
-  const { user } = useContext(AuthContext); // Assuming AuthContext provides user details
+  const { user } = useContext(AuthContext); 
   const [orders, setOrders] = useState([]);
   const [loading, setLoading] = useState(true);
 

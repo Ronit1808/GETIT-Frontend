@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import api from "../../../api"; // Axios instance for API calls
+import api from "../../../api"; 
 import { formatToIndianCurrency } from "../../../utils/currencyutilis";
 import Loading from '../../Loading'
 
 const PaymentSuccess = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  const orderId = location.state?.orderId; // Retrieve orderId from location state
+  const orderId = location.state?.orderId; 
 
   const [orderDetails, setOrderDetails] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -26,7 +26,7 @@ const PaymentSuccess = () => {
   useEffect(() => {
     const fetchOrderDetails = async () => {
       try {
-        // Fetch order details from API
+        
         const response = await api.get(`order_detail/${orderId}`);
         console.log(response.data);
 
@@ -37,7 +37,7 @@ const PaymentSuccess = () => {
 
           // Parse the shipping address string if it's in incorrect format
           const parseShippingAddress = (addressStr) => {
-            const validJsonString = addressStr.replace(/'/g, '"'); // Convert single quotes to double quotes
+            const validJsonString = addressStr.replace(/'/g, '"'); 
             return JSON.parse(validJsonString);
           };
 
@@ -110,7 +110,7 @@ const PaymentSuccess = () => {
             <strong>Total Items:</strong> {orderDetails.num_of_items}
           </p>
 
-          {/* Display Shipping Address if parsed */}
+          
           {orderDetails.shipping_address && (
             <div>
               <p className="font-bold">Shipping Address:</p>

@@ -9,14 +9,13 @@ import { AuthContext } from '../../context/AuthContext';
 
 
 function Cart() {
-  const { cart, setCart } = useContext(AuthContext); // Get cart and setCart from AuthContext
+  const { cart, setCart } = useContext(AuthContext); 
   const [cartItems, setCartItems] = useState([]);
   const [cartSummary, setCartSummary] = useState({});
 
   console.log(cart)
 
   useEffect(() => {
-    // Update local state when cart in AuthContext changes
     setCartItems(cart.items || []);
     setCartSummary({
       totalPrice: cart.summary?.totalPrice || 0,
@@ -37,7 +36,7 @@ function Cart() {
         setCart({
           items: updatedCartItems,
           summary: updatedCartSummary,
-        }); // Update the cart in AuthContext
+        });
       })
       .catch((err) => {
         console.error("Error updating quantity:", err.message);
@@ -58,7 +57,7 @@ function Cart() {
         setCart({
           items: updatedCartItems,
           summary: updatedCartSummary,
-        }); // Update the cart in AuthContext
+        }); 
       })
       .catch((err) => {
         console.error("Error deleting item:", err.message);

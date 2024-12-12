@@ -15,9 +15,9 @@ const HomeCard = ({ product }) => {
         />
 
        
-        <div className="p-4 text-center mt-1">
+        <div className="p-4 mt-1">
           <h3 className="text-base md:text-lg lg-text-xl font-medium">{product.name}</h3>
-          <p className="text-green-500 text-sm md:text-base lg:text-lg">
+          <p className="text-green-500 pt-1 text-base md:text-lg lg:text-xl">
             {formatToIndianCurrency(product.price)}
           </p>
         </div>

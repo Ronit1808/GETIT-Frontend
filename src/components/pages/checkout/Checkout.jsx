@@ -151,6 +151,7 @@ const Checkout = () => {
                                 onChange={handleInputChange}
                                 placeholder="Full Name"
                                 className="p-3 border border-gray-300 rounded-md w-full"
+                                required
                             />
                             <input
                                 type="text"
@@ -159,6 +160,7 @@ const Checkout = () => {
                                 onChange={handleInputChange}
                                 placeholder="Shipping Address"
                                 className="p-3 border border-gray-300 rounded-md w-full"
+                                required
                             />
                             <input
                                 type="text"
@@ -167,6 +169,7 @@ const Checkout = () => {
                                 onChange={handleInputChange}
                                 placeholder="City"
                                 className="p-3 border border-gray-300 rounded-md w-full"
+                                required
                             />
                             <input
                                 type="text"
@@ -175,6 +178,7 @@ const Checkout = () => {
                                 onChange={handleInputChange}
                                 placeholder="Zip Code"
                                 className="p-3 border border-gray-300 rounded-md w-full mb-0"
+                                required
                             />
                         </div>
                     </form>

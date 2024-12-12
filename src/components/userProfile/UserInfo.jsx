@@ -29,8 +29,8 @@ const UserInfo = () => {
       })
       .then((res) => {
         toast.success("Profile updated successfully");
-        setUser(res.data); // Update user context
-        setIsEditing(false); // Close edit mode
+        setUser(res.data); 
+        setIsEditing(false); 
       })
       .catch((err) => {
         console.error(err);
