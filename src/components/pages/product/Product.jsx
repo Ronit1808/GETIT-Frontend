@@ -87,7 +87,7 @@ const Product = () => {
 
 
   useEffect(() => {
-    if (product.id) {
+    if (cart_code && product.id) {
       api
         .get(`product_is_added?cart_code=${cart_code}&product_id=${product.id}`, {
           headers: { Authorization: `Bearer ${localStorage.getItem('access')}` },
