@@ -125,13 +125,27 @@ To test the payment gateway integration:
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+### Home Page
+![Home Page](assets/images/home.png)
+
+### Products 
+![Products](assets/images/products.png)
+
+### Single Product Page
+![Single Product Page](assets/images/singleproduct.png)
+
+### Cart Page
+![Cart Page](assets/images/cart.png)
+
+### Checkout Page
+![Checkout Page](assets/images/checkout.png)
+
+### Profile Page
+![Profile Page](assets/images/profile.png)
+
+### Payment Success Page
+![Payment Success Page](assets/images/payment.png)
+
 
 
 
