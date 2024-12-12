@@ -85,25 +85,21 @@ This project is a full-stack e-commerce website where users can buy gaming acces
 
 Navigate to Frontend:
 ```bash
-Copy code
 cd frontend
 ```
 
 Install Dependencies:
 ```bash
-Copy code
 npm install
 ```
 
 Start the Development Server:
 ```bash
-Copy code
 npm start
 ```
 
 Environment Variables: Add the backend API URL in an .env file:
 ```arduino
-Copy code
 REACT_APP_API_URL=http://localhost:8000
 ```
 
