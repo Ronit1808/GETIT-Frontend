@@ -12,76 +12,77 @@ This project is a full-stack e-commerce website where users can buy gaming acces
 
 1. User Authentication:
 
-    Signup and login functionality.
+   - Signup and login functionality.
 
-    JWT-based authentication using Simple JWT.
+   - JWT-based authentication using Simple JWT.
 
 2. Frontend:
 
-    Built using React.
+    - Built using React.
 
-    Styled with Tailwind CSS.
+    - Styled with Tailwind CSS.
 
-    Notifications and alerts implemented with React Toastify.
+    - Notifications and alerts implemented with React Toastify.
 
 3. Backend:
 
-    Developed using Django REST Framework (DRF).
+    - Developed using Django REST Framework (DRF).
 
-    API endpoints for products, cart, orders, and user management.
+    - API endpoints for products, cart, orders, and user management.
 
-    Payment Integration:
+    - Payment Integration:
 
-    Integrated Razorpay for secure payments.
+    - Integrated Razorpay for secure payments.
 
 4. Test the payment with the following test card:
 
-    Card Number: 5267 3181 8797 5449
+    - Card Number: 5267 3181 8797 5449
 
-    Expiry Date: 08/30
+    - Expiry Date: 08/30
 
-    CVV: 123
+    - CVV: 123
 
-    Select "Success" to simulate a successful payment.
+    - Select "Success" to simulate a successful payment.
 
 5. Core Functionalities:
 
-    View product catalog.
+    - View product catalog.
 
-    Add products to cart.
+    - Add products to cart.
 
-    Checkout page with Razorpay payment integration.
+    - Checkout page with Razorpay payment integration.
 
-   U ser profile page to update personal information and view  order history.
+    - User profile page to update personal information and view  order history.
 
 6. State Management:
 
-    Implemented using React Context API.
+    - Implemented using React Context API.
     
 ## Tech Stack
 
 1. Frontend:
 
-   Framework: React
+  - Framework: React
 
-   Styling: Tailwind CSS
+  - Styling: Tailwind CSS
 
-   Notifications: React Toastify
+  - Notifications: React Toastify
 
-   Deployment: Netlify
+  - Deployment: Netlify
 
 2. Backend:
 
-   Framework: Django REST Framework (DRF)
+   - Framework: Django REST Framework (DRF)
 
-   Authentication: Simple JWT
+   - Authentication: Simple JWT
 
-   Payment Gateway: Razorpay
+   - Payment Gateway: Razorpay
 
-   Deployment: Render
-# Installation
+   - Deployment: Render
+   
+## Installation
 
-## Frontend (React)
+# Frontend (React)
 
 Navigate to Frontend:
 ```bash
@@ -142,7 +143,6 @@ To test the payment gateway integration:
 
 ### Payment Success Page
 ![Payment Success Page](src/assets/images/payment.png)
-
 
 
 
