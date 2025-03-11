@@ -1,7 +1,7 @@
 import axios from "axios"
 import { jwtDecode } from "jwt-decode"
 
-export const BASE_URL =  "https://getit-backend-production.up.railway.app" || "http://127.0.0.1:8001"
+export const BASE_URL =  "https://getit-backend-95de.onrender.com" || "http://127.0.0.1:8001"
 const api = axios.create({
     baseURL: BASE_URL
 })
@@ -26,4 +26,3 @@ api.interceptors.request.use(
 
 export default api
 
-// https://getit-backend-95de.onrender.com" ||
