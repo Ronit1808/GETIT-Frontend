@@ -5,6 +5,7 @@ import api, { BASE_URL } from '../../../api';
 import ProductRelated from './ProductRelated';
 import { AuthContext } from '../../context/AuthContext';
 import { formatToIndianCurrency } from '../../../utils/currencyutilis';
+import Loading from '../../Loading'
 
 const Product = () => {
   const { slug } = useParams();
@@ -117,6 +118,10 @@ const Product = () => {
         setLoading(true);
       });
   }, [slug]);
+
+  if (loading) {
+    return <Loading />;
+  }
 
   return (
     <div className="flex flex-col px-4 md:px-8">
